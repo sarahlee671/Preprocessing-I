@@ -60,7 +60,7 @@ html, body {
 
 
 //Variables
-
+@font: 'Diplomata SC', cursive;
 // @main-color: red;
 
 
@@ -80,10 +80,10 @@ header {
 		padding: 20px;
 		
 		width: 800px;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		background: black;
-	}
+	
 		a {
 			text-decoration: none;
 			color: white;
@@ -92,13 +92,49 @@ header {
 			background: white;
 			color: black;
 		}
+	}
 }
 
 .name h2 {
 	color: black;
 	text-align: center;	
 	font-size: 40px;
-	padding: 30px;
-	border-bottom: 4px solid black;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	// border-bottom: 4px solid black;
+}
+
+.top-content {
+	margin-top: 20px;
+	.about-me {
+		display: inline-block;
+		background: lightgray;
+		vertical-align: top;
+		font-size: 20px;
+		text-align: center;
+		width: 49.5%;
+		height: 230px;
+		h2 {
+			font-family: @front;
+		}
+	}
+	img {
+		width: 49.5%;
+		height: auto;
+	}
+}
+
+.middle-content {
+	width: 100%;
+	margin-top: 30px;
+
+	h2 {
+		background: black;
+		color: white;
+		font-family: @font;
+		padding: 3px;
+
+
+	}
 }
 
