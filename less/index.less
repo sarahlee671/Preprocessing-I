@@ -57,6 +57,10 @@ html, body {
     height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 
 
 //Variables
@@ -70,20 +74,23 @@ html, body {
 	color: white;
 	font-family: @font;
 	padding: 3px;
-	font-size: 25px;
-	margin-top: 20px;
+	font-size: 2.5rem;
+	margin-top: 2rem;
 }
 
 .font-boxes() {
 	h3 {
 		font-family: @font-boxes;
-		margin-top: 30px;
-		font-size: 25px;
+		margin-top: 3rem;
+		font-size: 2.5rem;
 	}
 	ul {
+		margin-top: 1rem;
+	
 		li {
 			list-style-type: square;
-			margin-left: 30px;	
+			margin-left: 3rem;
+			margin-top: 1rem;	
 		}
 	}
 }
@@ -97,14 +104,14 @@ html, body {
 .name {
 	h2 {
 		font-family: @font;
-		font-size: 30px;
+		font-size: 2.5rem;
 	}
 }
 
 header {
 	nav {
 		display: flex;
-		padding: 20px;
+		padding: 2rem;
 		width: 800px;
 		justify-content: space-around;
 		align-items: center;
@@ -124,22 +131,22 @@ header {
 .name h2 {
 	color: black;
 	text-align: center;	
-	font-size: 40px;
-	padding-top: 30px;
-	padding-bottom: 20px;
+	font-size: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 }
 
 .top-content {
-	margin-top: 20px;
+	margin-top: 2rem;
 
 	.about-me {
 		display: inline-block;
 		background: lightgray;
 		vertical-align: top;
-		font-size: 20px;
+		font-size: 2rem;
 		text-align: center;
 		width: 49.5%;
-		height: 230px;
+		height: 23rem;
 	
 		h2 {
 			font-family: @font;
@@ -154,7 +161,7 @@ header {
 
 .middle-content {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 3rem;
 
 	h2 {
 		.title-bar;
@@ -168,5 +175,7 @@ header {
 	h2 {
 		.title-bar
 	}
+	ul {
+		margin-top: 2rem;
+	}
 }
-

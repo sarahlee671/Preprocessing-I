@@ -134,17 +134,20 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
 .container {
   width: 800px;
   margin: 0 auto;
 }
 .name h2 {
   font-family: 'Diplomata SC', cursive;
-  font-size: 30px;
+  font-size: 2.5rem;
 }
 header nav {
   display: flex;
-  padding: 20px;
+  padding: 2rem;
   width: 800px;
   justify-content: space-around;
   align-items: center;
@@ -161,21 +164,21 @@ header nav a:hover {
 .name h2 {
   color: black;
   text-align: center;
-  font-size: 40px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 .top-content {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .top-content .about-me {
   display: inline-block;
   background: lightgray;
   vertical-align: top;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   width: 49.5%;
-  height: 230px;
+  height: 23rem;
 }
 .top-content .about-me h2 {
   font-family: 'Diplomata SC', cursive;
@@ -186,30 +189,37 @@ header nav a:hover {
 }
 .middle-content {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 .middle-content h2 {
   background: black;
   color: white;
   font-family: 'Diplomata SC', cursive;
   padding: 3px;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 .middle-content .boxes h3 {
   font-family: 'Teko', sans-serif;
-  margin-top: 30px;
-  font-size: 25px;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+.middle-content .boxes ul {
+  margin-top: 1rem;
 }
 .middle-content .boxes ul li {
   list-style-type: square;
-  margin-left: 30px;
+  margin-left: 3rem;
+  margin-top: 1rem;
 }
 .Skills-content h2 {
   background: black;
   color: white;
   font-family: 'Diplomata SC', cursive;
   padding: 3px;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+.Skills-content ul {
+  margin-top: 2rem;
 }
