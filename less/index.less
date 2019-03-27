@@ -61,12 +61,32 @@ html, body {
 
 //Variables
 @font: 'Diplomata SC', cursive;
-// @main-color: red;
-
-
+@font-boxes: 'Teko', sans-serif;
 
 
 //Mixins
+.title-bar() {
+	background: black;
+	color: white;
+	font-family: @font;
+	padding: 3px;
+	font-size: 25px;
+	margin-top: 20px;
+}
+
+.font-boxes() {
+	h3 {
+		font-family: @font-boxes;
+		margin-top: 30px;
+		font-size: 25px;
+	}
+	ul {
+		li {
+			list-style-type: square;
+			margin-left: 30px;	
+		}
+	}
+}
 
 
 .container {
@@ -74,11 +94,17 @@ html, body {
 	margin: 0 auto
 }
 
+.name {
+	h2 {
+		font-family: @font;
+		font-size: 30px;
+	}
+}
+
 header {
 	nav {
 		display: flex;
 		padding: 20px;
-		
 		width: 800px;
 		justify-content: space-around;
 		align-items: center;
@@ -101,11 +127,11 @@ header {
 	font-size: 40px;
 	padding-top: 30px;
 	padding-bottom: 20px;
-	// border-bottom: 4px solid black;
 }
 
 .top-content {
 	margin-top: 20px;
+
 	.about-me {
 		display: inline-block;
 		background: lightgray;
@@ -114,10 +140,12 @@ header {
 		text-align: center;
 		width: 49.5%;
 		height: 230px;
+	
 		h2 {
-			font-family: @front;
+			font-family: @font;
 		}
 	}
+
 	img {
 		width: 49.5%;
 		height: auto;
@@ -129,12 +157,16 @@ header {
 	margin-top: 30px;
 
 	h2 {
-		background: black;
-		color: white;
-		font-family: @font;
-		padding: 3px;
+		.title-bar;
+	}
+	.boxes {
+		.font-boxes;
+	}
+}
 
-
+.Skills-content {
+	h2 {
+		.title-bar
 	}
 }
 

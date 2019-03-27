@@ -138,6 +138,10 @@ body {
   width: 800px;
   margin: 0 auto;
 }
+.name h2 {
+  font-family: 'Diplomata SC', cursive;
+  font-size: 30px;
+}
 header nav {
   display: flex;
   padding: 20px;
@@ -173,6 +177,9 @@ header nav a:hover {
   width: 49.5%;
   height: 230px;
 }
+.top-content .about-me h2 {
+  font-family: 'Diplomata SC', cursive;
+}
 .top-content img {
   width: 49.5%;
   height: auto;
@@ -186,4 +193,23 @@ header nav a:hover {
   color: white;
   font-family: 'Diplomata SC', cursive;
   padding: 3px;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.middle-content .boxes h3 {
+  font-family: 'Teko', sans-serif;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.middle-content .boxes ul li {
+  list-style-type: square;
+  margin-left: 30px;
+}
+.Skills-content h2 {
+  background: black;
+  color: white;
+  font-family: 'Diplomata SC', cursive;
+  padding: 3px;
+  font-size: 25px;
+  margin-top: 20px;
 }
