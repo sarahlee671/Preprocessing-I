@@ -57,19 +57,48 @@ html, body {
     height: 100%;
 }
 
+
+
 //Variables
 
-@main-color: red;
+// @main-color: red;
 
 
 
 
 //Mixins
 
+
+.container {
+	width: 800px;
+	margin: 0 auto
+}
+
 header {
 	nav {
-		a{
-			color: @main-color;
-		}
+		display: flex;
+		padding: 20px;
+		
+		width: 800px;
+		justify-content: space-between;
+		align-items: center;
+		background: black;
 	}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			background: white;
+			color: black;
+		}
 }
+
+.name h2 {
+	color: black;
+	text-align: center;	
+	font-size: 40px;
+	padding: 30px;
+	border-bottom: 4px solid black;
+}
+

@@ -134,6 +134,30 @@ html,
 body {
   height: 100%;
 }
-header nav a {
-  color: red;
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  padding: 20px;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a:hover {
+  background: white;
+  color: black;
+}
+.name h2 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  padding: 30px;
+  border-bottom: 4px solid black;
 }
