@@ -57,3 +57,125 @@ html, body {
     height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+
+
+//Variables
+@font: 'Diplomata SC', cursive;
+@font-boxes: 'Teko', sans-serif;
+
+
+//Mixins
+.title-bar() {
+	background: black;
+	color: white;
+	font-family: @font;
+	padding: 3px;
+	font-size: 2.5rem;
+	margin-top: 2rem;
+}
+
+.font-boxes() {
+	h3 {
+		font-family: @font-boxes;
+		margin-top: 3rem;
+		font-size: 2.5rem;
+	}
+	ul {
+		margin-top: 1rem;
+	
+		li {
+			list-style-type: square;
+			margin-left: 3rem;
+			margin-top: 1rem;	
+		}
+	}
+}
+
+
+.container {
+	width: 800px;
+	margin: 0 auto
+}
+
+.name {
+	h2 {
+		font-family: @font;
+		font-size: 2.5rem;
+	}
+}
+
+header {
+	nav {
+		display: flex;
+		padding: 2rem;
+		width: 800px;
+		justify-content: space-around;
+		align-items: center;
+		background: black;
+	
+		a {
+			text-decoration: none;
+			color: white;
+		}
+		a:hover {
+			background: white;
+			color: black;
+		}
+	}
+}
+
+.name h2 {
+	color: black;
+	text-align: center;	
+	font-size: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.top-content {
+	margin-top: 2rem;
+
+	.about-me {
+		display: inline-block;
+		background: lightgray;
+		vertical-align: top;
+		font-size: 2rem;
+		text-align: center;
+		width: 49.5%;
+		height: 23rem;
+	
+		h2 {
+			font-family: @font;
+		}
+	}
+
+	img {
+		width: 49.5%;
+		height: auto;
+	}
+}
+
+.middle-content {
+	width: 100%;
+	margin-top: 3rem;
+
+	h2 {
+		.title-bar;
+	}
+	.boxes {
+		.font-boxes;
+	}
+}
+
+.Skills-content {
+	h2 {
+		.title-bar
+	}
+	ul {
+		margin-top: 2rem;
+	}
+}
